@@ -6,6 +6,7 @@
     <title>GetSolace</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,7 @@
             <img src="img/logo.svg" alt="logo">
           </div>
           <!-- Hamburger icon for mobile -->
-          <button class="header__toggle" id="navToggle" aria-label="Open menu">
+          <button class="header__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
             <!-- SVG Hamburger Icon -->
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <rect y="7" width="32" height="3" rx="1.5" fill="#5c5b62"/>
@@ -24,7 +25,7 @@
             </svg>
           </button>
         </div>
-        <ul class="header__nav" id="navMenu">
+        <ul class="header__nav" id="navMenu" aria-hidden="true">
             <li class="header__nav-item"><a href="#" class="font-grey font-size-medium">About Us</a></li>
             <li class="header__nav-item"><a href="#" class="font-grey font-size-medium">Contact Us</a></li>
             <li class="header__nav-item"><a href="#" class="font-grey font-size-medium">Getsolace Designs</a></li>
@@ -309,12 +310,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      const navToggle = document.getElementById('navToggle');
-      const navMenu = document.getElementById('navMenu');
-      navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
-      });
-    </script>
   </body>
 </html>
