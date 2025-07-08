@@ -1,121 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GetSolace</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="header__brand">
-          <div class="header__logo font-secondary">
-            <img src="img/logo.svg" alt="logo">
-          </div>
-          <!-- Hamburger icon for mobile -->
-          <button class="header__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-            <!-- SVG Hamburger Icon -->
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <rect y="7" width="32" height="3" rx="1.5" fill="#5c5b62"/>
-              <rect y="15" width="32" height="3" rx="1.5" fill="#5c5b62"/>
-              <rect y="23" width="32" height="3" rx="1.5" fill="#5c5b62"/>
-            </svg>
-          </button>
-        </div>
-        <ul class="header__nav" id="navMenu" aria-hidden="true">
-            <li class="header__nav-item"><a href="index.html" class="font-grey font-size-medium">Home</a></li>
-            <li class="header__nav-item"><a href="about.html" class="font-grey font-size-medium">About Us</a></li>
-            <li class="header__nav-item"><a href="contact.html" class="font-grey font-size-medium">Contact Us</a></li>
-            <li class="header__nav-item"><a href="designs.html" class="font-grey font-size-medium">Getsolace Designs</a></li>
-            <li class="header__nav-item"><a href="blogs.html" class="font-grey font-size-medium">Blogs</a></li>
-            <li class="header__nav-item--right"><a href="community.html" class="font-grey font-size-medium">Community</a></li>
-            <li class="header__nav-item--right"><a href="account.html" class="font-grey font-size-medium">Account</a></li>
-        </ul>
-      </nav>
-    </header>
-    <footer>
-      <p class="font-grey font-size-large">
-        GetSolace is a support platform, not a healthcare provider. For emergencies, please contact the KIRAN Helpline at 1800-599-0019.
-      </p>
-      <div class="footer__container">
-        <div class="footer__content">
-          <div class="footer__socials">
-            <div class="header__brand">
-              <div class="header__logo font-secondary">
-                <img src="img/logo.svg" alt="logo">
-              </div>
-            </div>
-            <div class="footer__socials-list font-size-small">
-              <p class="font-grey"><small>Follow us</small></p>
-              <ul>
-                <li><a href="#" class="font-light">Twitter</a></li>
-                <li><a href="#" class="font-light">Mastodon</a></li>
-                <li><a href="#" class="font-light">YouTube</a></li>
-                <li><a href="#" class="font-light">Github</a></li>
-              </ul>
-            </div>
-            <p class="font-size-small font-grey">
-              <small>&copy; 2024 GetSolace</small>
-            </p>
-          </div>
-          <div class="footer__links font-size-small">
-            <div class="footer__links-group">
-              <p class="font-grey"><small>Get started</small></p>
-              <ul>
-                <li><a href="#" class="font-light">Download</a></li>
-                <li><a href="#" class="font-light">Pricing</a></li>
-                <li><a href="#" class="font-light">Account</a></li>
-              </ul>
-            </div>
-            <div class="footer__links-group">
-              <p class="font-grey"><small>Learn</small></p>
-              <ul>
-                <li><a href="#" class="font-light">Help</a></li>
-                <li><a href="#" class="font-light">Developers</a></li>
-                <li><a href="#" class="font-light">Changelog</a></li>
-                <li><a href="#" class="font-light">About</a></li>
-                <li><a href="#" class="font-light">Roadmap</a></li>
-                <li><a href="#" class="font-light">Blog</a></li>
-              </ul>
-            </div>
-            <div class="footer__links-group">
-              <p class="font-grey"><small>Community</small></p>
-              <ul>
-                <li><a href="#" class="font-light">Join the community</a></li>
-                <li><a href="#" class="font-light">Brand guidelines</a></li>
-                <li><a href="#" class="font-light">Merch store</a></li>
-                <li><a href="#" class="font-light">Discord</a></li>
-                <li><a href="#" class="font-light">Forum</a></li>
-              </ul>
-            </div>
-            <div class="footer__links-group">
-              <p class="font-grey"><small>GetSolace</small></p>
-              <ul>
-                <li><a href="#" class="font-light">Overview</a></li>
-                <li><a href="#" class="font-light">Sync</a></li>
-                <li><a href="#" class="font-light">Publish</a></li>
-                <li><a href="#" class="font-light">Sandbox</a></li>
-                <li><a href="#" class="font-light">Mobile</a></li>
-                <li><a href="#" class="font-light">Plugins</a></li>
-              </ul>
-            </div>
-            <div class="footer__links-group">
-              <p class="font-grey"><small>Legal</small></p>
-              <ul>
-                <li><a href="#" class="font-light">License overview</a></li>
-                <li><a href="#" class="font-light">Terms of service</a></li>
-                <li><a href="#" class="font-light">Privacy / Security</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer__return-link">
-          <a href="#" class="font-grey font-size-small">Top</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetSolace Designs - Research-Driven Creative Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="designs.css">
+</head>
+<body class="designs-page">
+  <header>
+    <nav class="header__nav">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo">
+          <img src="img/designs-logo.svg" alt="GetSolace Designs">
+        </a>
+        <button class="header__toggle" id="navToggle" aria-label="Toggle navigation">
+          <svg class="icon">☰</svg>
+        </button>
+      </div>
+      <ul class="header__nav-list" id="navMenu">
+        <li><a href="designs.html#services">Services</a></li>
+        <li><a href="designs.html#portfolio">Portfolio</a></li>
+        <li><a href="designs.html#process">Process</a></li>
+        <li><a href="designs.html#contact" class="cta-primary">Start Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="designs-hero">
+      <div class="hero__content">
+        <h1>Evidence-Based Design Solutions <span class="highlight">+27% ROI Guaranteed</span></h1>
+        <div class="cta-cluster">
+          <a href="#contact" class="cta-primary">Free Brand Audit</a>
+          <a href="#portfolio" class="cta-secondary">View Case Studies</a>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="hero__stats">
+        <div class="stat-card">
+          <span class="stat-number">142%</span>
+          <span class="stat-label">Average Client ROI</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4.9/5</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional sections continue -->
+  </main>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXX', { 
+    'page_title': 'GetSolace Designs',
+    'content_group': 'Design Services'
+  });
+</script>
+  <script src="main.js"></script>
+  <script src="designs.js"></script>
+</body>
 </html>
